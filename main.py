@@ -1,5 +1,4 @@
 import timeit
-import yaml
 import argparse
 from src.utils import setup_dbqa
 
@@ -8,8 +7,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('input',
                         type=str,
-                        default='How much is the minimum guarantee payable by adidas?',
-                        help='Enter the query to pass into the LLM')
+                        default='What is biggest learning from Bhagvad Gita?',)
     args = parser.parse_args()
 
     # Setup DBQA

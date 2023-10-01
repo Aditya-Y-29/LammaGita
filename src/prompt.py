@@ -1,4 +1,4 @@
-qa_template = """Use the following pieces of information to answer the user's question.
+qa_template = """You will be given some learning from .
 
 Context: {context}
 Question: {question}

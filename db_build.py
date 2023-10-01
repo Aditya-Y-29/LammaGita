@@ -1,10 +1,9 @@
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.document_loaders.csv_loader import CSVLoader
+import pandas as pd
 
-RETURN_SOURCE_DOCUMENTS= True
-VECTOR_COUNT= 3
 CHUNK_SIZE= 500
 CHUNK_OVERLAP= 50
 DATA_PATH= 'data/'
@@ -13,15 +12,14 @@ DB_FAISS_PATH= 'vectorstore/db_faiss'
 
 # Build vector database
 def run_db_build():
-    loader = DirectoryLoader(DATA_PATH,
-                             glob='*.pdf',
-                             loader_cls=PyPDFLoader)
+    
+    loader = CSVLoader(file_path='data/dataset.csv')
     documents = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=CHUNK_SIZE,
                                                    chunk_overlap=CHUNK_OVERLAP)
     texts = text_splitter.split_documents(documents)
 
-    print(texts)
+    # print(texts)
 
     embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2',
                                        model_kwargs={'device': 'cpu'})
