@@ -28,6 +28,6 @@ Link: https://huggingface.co/TheBloke/Llama-2-7B-GGML
 Quantised models are used because they are less compute- and memory-intensive. 
 
 ## Tools and Data
-![My Image](assests\overview.png)
+![My Image](assests/overview.png)
 
 ##
