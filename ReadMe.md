@@ -20,7 +20,7 @@ LAMMAGITA/
 ```
 ## Tools and Data
 
-![My Image](assets/overview.png)
+![Overview](assests/overview.png)
 
 ### Software Tools Utilized in Building the Backend Application
 
