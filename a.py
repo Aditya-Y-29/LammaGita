@@ -11,7 +11,7 @@ file_path = 'data/Bhagwad_Gita.csv'
 df.to_csv(file_path, index=False)
 
 # Print the selected columns
-print(df[0])
+print(df.iloc[0])
 # from langchain.document_loaders.csv_loader import CSVLoader
 
 # loader = CSVLoader(file_path='data/Bhagwad_Gita.csv')
