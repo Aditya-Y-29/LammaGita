@@ -105,13 +105,13 @@ One of the limitations associated with the current approach lies in the context 
 
 ## To execute the application, any of the following methods can be employed:
 
-### Commands to run
+### Approach 1: Commands to run
 Command to `build` a docker image: `docker build -t llama-gita .`
 
 Command to `run` a docker image: `docker run --rm -it -d -p 8501:8501 --name llama-gita-container llama-gita`
 
 If all operations proceed without any issues, you can make inquiries to the chatbot at: http://192.168.225.215:8501/
 
-### Running using bash script: `run_llama_gita.sh`
+### Approach 2: Running using bash script: `run_llama_gita.sh`
 
 Make the script executable by running the following command: `chmod +x run_llama_gita.sh`
