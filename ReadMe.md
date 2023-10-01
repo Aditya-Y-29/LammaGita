@@ -83,6 +83,8 @@ With the prompt template and C Transformers LLM ready, we wrote three functions 
 In the next step, we combined the previous components into the `main.py` script. To evaluate the speed of CPU inference, the timeit module is also utilized.
 
 ## User Interface
+Attached are several screenshots of the user interface for review.
+If screenshots are not displayed, they can be viewed in the `/assets` folder.
 
 ### User query: What can I learn from Bhagvad Gita?
 ![Overview](assets/q1_1.png)
