@@ -17,6 +17,8 @@ LAMMAGITA/
 ├── main.py: This file contains the user interface for the chatbot created using Streamlit.
 ├── process_dataset.py: This script further processes the dataset.
 └── README.md: This file provides information on the directory structure and instructions for running the project.
+└── requirement.txt: It contains a list of Python packages or libraries along with their version numbers. These packages are dependencies that are required for a Python project to run.
+└── run_llama_gita.sh: bash script with instructions to run the container.
 ```
 ## Tools and Data
 
@@ -98,3 +100,16 @@ Furthermore, to enrich the user experience and provide more comprehensive insigh
 
 ## Limitations
 One of the limitations associated with the current approach lies in the context limit imposed by the model, which stands at 512 tokens. This constraint occasionally leads to situations where the input surpasses the prescribed token limit, necessitating manual intervention to terminate the process. This interruption can disrupt the user experience and necessitate additional oversight during execution.
+
+## To execute the application, any of the following methods can be employed:
+
+### Commands to run
+Command to `build` a docker image: `docker build -t llama-gita .`
+
+Command to `run` a docker image: `docker run --rm -it -d -p 8501:8501 --name llama-gita-container llama-gita`
+
+If all operations proceed without any issues, you can make inquiries to the chatbot at: http://192.168.225.215:8501/
+
+### Running using bash script: `run_llama_gita.sh`
+
+Make the script executable by running the following command: `chmod +x run_llama_gita.sh`

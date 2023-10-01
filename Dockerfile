@@ -10,5 +10,11 @@ COPY Models /app/Models
 COPY vectorstore /app/vectorstore
 COPY .env /app
 
+RUN pip install streamlit
+RUN pip install langchain
+RUN pip install streamlit_chat
+
+COPY main.py /app
+
 # Define the command to run your Python script
 CMD ["streamlit", "run", "main.py"]
