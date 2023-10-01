@@ -20,7 +20,7 @@ LAMMAGITA/
 ```
 ## Tools and Data
 
-![Overview](assests/overview.png)
+![Overview](assets/overview.png)
 
 ### Software Tools Utilized in Building the Backend Application
 
@@ -79,3 +79,22 @@ With the prompt template and C Transformers LLM ready, we wrote three functions 
 ### Step 6: Combining into the Main Script
 
 In the next step, we combined the previous components into the `main.py` script. To evaluate the speed of CPU inference, the timeit module is also utilized.
+
+## User Interface
+### User query: What can I learn from Bhagvad Gita?
+![Overview](assets/q1_1.png)
+
+![Overview](assets/q1_2.png)
+
+### User query: Who is Arjun?
+![Overview](assets/q2.png)
+
+Here, the chatbot also indicates the source of the information in its response.
+ 
+## Improvements
+The application's performance and capabilities can be significantly enhanced by adopting a full-scale Llama 7B model, as opposed to the quantized version currently in use. Additionally, optimizing the deployment strategy by hosting the model remotely can substantially reduce inference time and improve overall responsiveness.
+
+Furthermore, to enrich the user experience and provide more comprehensive insights, it is advisable to employ a more extensive and diverse dataset. This enhanced dataset should include the Sanskrit shlokas but also incorporate their English translations and guidance on addressing user queries effectively. 
+
+## Limitations
+One of the limitations associated with the current approach lies in the context limit imposed by the model, which stands at 512 tokens. This constraint occasionally leads to situations where the input surpasses the prescribed token limit, necessitating manual intervention to terminate the process. This interruption can disrupt the user experience and necessitate additional oversight during execution.
