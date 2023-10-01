@@ -3,6 +3,7 @@ from src.utils import setup_dbqa
 from streamlit_chat import message
 import streamlit as st
 import os
+from dotenv import load_dotenv
 
 os.environ['TOKENIZERS_PARALLELISM'] = 'true'
 

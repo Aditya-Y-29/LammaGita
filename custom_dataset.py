@@ -1,14 +1,17 @@
 import pandas as pd
 import openai
 import time
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Specify the file path to your CSV file
 file_path = 'data/Bhagwad_Gita.csv'
 
 # Read the CSV file into a Pandas DataFrame
 df = pd.read_csv(file_path)
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAPI_KEY")
 
 # for row in df.itertuples():
 english_meaning=[]
