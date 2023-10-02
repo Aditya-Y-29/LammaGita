@@ -22,7 +22,7 @@ LAMMAGITA/
 ```
 ## Tools and Data
 
-![Overview](assets/overview.png)
+![Overview](https://github.com/Aditya-Y-29/LammaGita/assets/121538382/c47577fc-b04f-4c34-a11a-26b62a7cbf3b)
 
 ### Software Tools Utilized in Building the Backend Application
 
@@ -87,12 +87,12 @@ Attached are several screenshots of the user interface for review.
 If screenshots are not displayed, they can be viewed in the `/assets` folder.
 
 ### User query: What can I learn from Bhagvad Gita?
-![Overview](assets/q1_1.png)
+![Overview](https://github.com/Aditya-Y-29/LammaGita/assets/121538382/7d38db42-179d-4fe5-9a17-f8343cf666c6)
 
-![Overview](assets/q1_2.png)
+![Overview](https://github.com/Aditya-Y-29/LammaGita/assets/121538382/15b4840f-8358-48b6-a81e-96edfc67eec3)
 
 ### User query: Who is Arjun?
-![Overview](assets/q2.png)
+![Overview](https://github.com/Aditya-Y-29/LammaGita/assets/121538382/00e97f11-6f05-4191-bc25-c0c13439cb28)
 
 Here, the chatbot also indicates the source of the information in its response.
  
